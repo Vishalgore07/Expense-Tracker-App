@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "qYfJFCqqWYWF9+wKjv68tnOFIozwxEUXbTFj1f48FuE=",
+  "Hash": "9Q4s77/bOgHb6VuzBTS9dGPuNAQwM4a01dptMhDQElE=",
   "Source": "Expense Tracker App",
   "BasePath": "_content/Expense Tracker App",
   "Mode": "Default",
@@ -1250,6 +1250,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\logo.png"
+    },
+    {
+      "Identity": "C:\\Users\\DELL\\Desktop\\CTPL\\C#\\.NetLearning\\Expense Tracker Application\\Expense Tracker App\\wwwroot\\profile.jpg",
+      "SourceId": "Expense Tracker App",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\DELL\\Desktop\\CTPL\\C#\\.NetLearning\\Expense Tracker Application\\Expense Tracker App\\wwwroot\\",
+      "BasePath": "_content/Expense Tracker App",
+      "RelativePath": "profile.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\profile.jpg"
     }
   ]
 }

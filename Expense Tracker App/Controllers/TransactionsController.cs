@@ -91,6 +91,5 @@ namespace Expense_Tracker_App.Controllers
             CategoryCollection.Insert(0, DefaultCategory);
             ViewBag.Categories = CategoryCollection;
         }
-
     }
 }
