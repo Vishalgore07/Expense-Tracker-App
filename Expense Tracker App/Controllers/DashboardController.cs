@@ -18,11 +18,11 @@ namespace Expense_Tracker_App.Controllers
         {
             try
             {
-                // Define date range - Last 7 Days
-                DateTime StartDate = DateTime.Today.AddDays(-6);
+                // Define date range - Last 30 Days
+                DateTime StartDate = DateTime.Today.AddDays(-30);
                 DateTime EndDate = DateTime.Today;
 
-                // Get transactions within the last 7 days
+                // Get transactions within the last 30 days
                 List<Transaction> SelectedTransactions = await _context.Transactions
                     .Include(x => x.Category)
                     .Where(d => d.Date >= StartDate && d.Date <= EndDate)
@@ -89,12 +89,12 @@ namespace Expense_Tracker_App.Controllers
                     .ToList();
 
                 // Generate the last 7 days
-                string[] Last7Days = Enumerable.Range(0, 7)
+                string[] Last30Days = Enumerable.Range(0, 30)
                     .Select(i => StartDate.AddDays(i).ToString("dd-MM"))
                     .ToArray();
 
                 // Combine Income & Expense data for the spline chart
-                var splineChartData = from day in Last7Days
+                var splineChartData = from day in Last30Days
                                       join income in IncomeSummary on day equals income.day into incomeJoined
                                       from income in incomeJoined.DefaultIfEmpty()
                                       join expense in ExpenseSummary on day equals expense.day into expenseJoined
